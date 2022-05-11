@@ -1,0 +1,23 @@
+### Upload
+POST http://localhost:8080/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="Dollar.jpg"
+
+< C:\Users\Javlon\Downloads\Dollar.jpg
+--WebAppBoundary--
+
+### Open
+GET http://localhost:8080/attach/open/5a27c2d3-856e-4ab4-ab79-f34ccacfa330
+
+### Download
+GET http://localhost:8080/attach/download/5a27c2d3-856e-4ab4-ab79-f34ccacfa330
+
+### Show all
+GET http://localhost:8080/attach/adminjon
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNzU4NTY1LCJleHAiOjE2NTE3NjIxNjUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.8xwOEe5CbYHUpXMAhsOxS8lwKhXAyU1aO-dUUjB_lUk
+
+### Delete
+DELETE http://localhost:8080/attach/adminjon/5a27c2d3-856e-4ab4-ab79-f34ccacfa330
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNDk4Mjc0LCJleHAiOjE2NTE1MDE4NzQsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.cPEyfN_3aKLd_-1ueDvpVWzZr8k1KQO-ZihcL7aoDzM

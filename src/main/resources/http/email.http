@@ -1,0 +1,7 @@
+### Show all
+GET http://localhost:8080/email/adminjon
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNDcwNTY0LCJleHAiOjE2NTE0NzQxNjQsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.nWVmhfaJh6aVeNm6SDfLJHHsdw0xGLJ3m01kUvKPJ_s
+
+### Delete by id
+DELETE http://localhost:8080/email/adminjon/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNDcwNTY0LCJleHAiOjE2NTE0NzQxNjQsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.nWVmhfaJh6aVeNm6SDfLJHHsdw0xGLJ3m01kUvKPJ_s

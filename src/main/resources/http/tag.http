@@ -1,0 +1,43 @@
+### Create 1
+POST http://localhost:8080/tag/adminjon
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTc4Njc1LCJleHAiOjE2NTE1ODIyNzUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.h8PG1h8zDDHslmsTQLU8_vkFnI-4Aq9Cn5j0ar-ZWqk
+
+{
+  "nameEn": "Frontend",
+  "nameRu": "Фронтенд",
+  "nameUz": "Frontend",
+  "key": "Frontend"
+}
+
+### Create 2
+POST http://localhost:8080/tag/adminjon
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTc4Njc1LCJleHAiOjE2NTE1ODIyNzUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.h8PG1h8zDDHslmsTQLU8_vkFnI-4Aq9Cn5j0ar-ZWqk
+
+{
+  "nameEn": "Backend",
+  "nameRu": "Бэкенд",
+  "nameUz": "Backend",
+  "key": "Backend"
+}
+
+### Update
+PUT http://localhost:8080/tag/adminjon/4
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTc4Njc1LCJleHAiOjE2NTE1ODIyNzUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.h8PG1h8zDDHslmsTQLU8_vkFnI-4Aq9Cn5j0ar-ZWqk
+
+{
+  "nameEn": "Fullstack",
+  "nameRu": "Фуллстек",
+  "nameUz": "Fullstack",
+  "key": "Fullstack"
+}
+
+### Delete
+DELETE http://localhost:8080/tag/adminjon/6
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTc4Njc1LCJleHAiOjE2NTE1ODIyNzUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.h8PG1h8zDDHslmsTQLU8_vkFnI-4Aq9Cn5j0ar-ZWqk
+
+### Show by lang
+GET http://localhost:8080/tag/public
+Accept-Language: uz

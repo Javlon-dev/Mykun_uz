@@ -1,0 +1,47 @@
+### Create 1
+POST http://localhost:8080/category/adminjon
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTEyMzgwLCJleHAiOjE2NTE1MTU5ODAsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.5CA7n1fto0KAOzgX51dhaQDrI_SAxMqKMnA8flB7_AM
+
+{
+  "nameEn": "Uzbekistan",
+  "nameRu": "Узбекистан",
+  "nameUz": "O'zbekiston",
+  "key": "Uzbekistan"
+}
+
+### Create 2
+POST http://localhost:8080/category/adminjon
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTEyMzgwLCJleHAiOjE2NTE1MTU5ODAsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.5CA7n1fto0KAOzgX51dhaQDrI_SAxMqKMnA8flB7_AM
+
+{
+  "nameEn": "World",
+  "nameRu": "Мир",
+  "nameUz": "Jahon",
+  "key": "World"
+}
+
+### Update
+PUT http://localhost:8080/category/adminjon/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTEyMzgwLCJleHAiOjE2NTE1MTU5ODAsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.5CA7n1fto0KAOzgX51dhaQDrI_SAxMqKMnA8flB7_AM
+
+{
+  "nameEn": "Business",
+  "nameRu": "Бизнес",
+  "nameUz": "Business",
+  "key": "Business"
+}
+
+### Delete
+DELETE http://localhost:8080/category/adminjon/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTEyMzgwLCJleHAiOjE2NTE1MTU5ODAsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.5CA7n1fto0KAOzgX51dhaQDrI_SAxMqKMnA8flB7_AM
+
+### Show all
+GET http://localhost:8080/category/adminjon
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNzU4NTY1LCJleHAiOjE2NTE3NjIxNjUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.8xwOEe5CbYHUpXMAhsOxS8lwKhXAyU1aO-dUUjB_lUk
+
+### Show by lang
+GET http://localhost:8080/category/public
+Accept-Language: en

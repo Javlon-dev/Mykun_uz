@@ -1,0 +1,63 @@
+11-05-2022 01:37:03 - com.company.Lesson88KunUzApplication - [34mINFO [0;39m - Starting Lesson88KunUzApplication using Java 18.0.1.1 on DESKTOP-2M2L4BF with PID 11712 (D:\PDP\Bootcamp B15\Lesson_88_kun_uz\target\classes started by Javlon in D:\PDP\Bootcamp B15\Lesson_88_kun_uz)
+11-05-2022 01:37:03 - com.company.Lesson88KunUzApplication - [39mDEBUG[0;39m - Running with Spring Boot v2.6.6, Spring v5.3.18
+11-05-2022 01:37:03 - com.company.Lesson88KunUzApplication - [34mINFO [0;39m - The following 1 profile is active: "dev"
+11-05-2022 01:37:04 - o.s.d.r.c.RepositoryConfigurationDelegate - [34mINFO [0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-05-2022 01:37:04 - o.s.d.r.c.RepositoryConfigurationDelegate - [34mINFO [0;39m - Finished Spring Data repository scanning in 89 ms. Found 11 JPA repository interfaces.
+11-05-2022 01:37:04 - o.s.b.w.e.tomcat.TomcatWebServer - [34mINFO [0;39m - Tomcat initialized with port(s): 8080 (http)
+11-05-2022 01:37:05 - o.a.catalina.core.StandardService - [34mINFO [0;39m - Starting service [Tomcat]
+11-05-2022 01:37:05 - o.a.catalina.core.StandardEngine - [34mINFO [0;39m - Starting Servlet engine: [Apache Tomcat/9.0.60]
+11-05-2022 01:37:05 - o.a.c.c.C.[Tomcat].[localhost].[/] - [34mINFO [0;39m - Initializing Spring embedded WebApplicationContext
+11-05-2022 01:37:05 - o.s.b.w.s.c.ServletWebServerApplicationContext - [34mINFO [0;39m - Root WebApplicationContext: initialization completed in 1289 ms
+11-05-2022 01:37:05 - com.company.config.JwtFilter - [39mDEBUG[0;39m - Filter 'jwtFilter' configured for use
+11-05-2022 01:37:05 - o.h.jpa.internal.util.LogHelper - [34mINFO [0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+11-05-2022 01:37:05 - org.hibernate.Version - [34mINFO [0;39m - HHH000412: Hibernate ORM core version 5.6.7.Final
+11-05-2022 01:37:05 - o.h.annotations.common.Version - [34mINFO [0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11-05-2022 01:37:05 - com.zaxxer.hikari.HikariDataSource - [34mINFO [0;39m - HikariPool-1 - Starting...
+11-05-2022 01:37:05 - com.zaxxer.hikari.HikariDataSource - [34mINFO [0;39m - HikariPool-1 - Start completed.
+11-05-2022 01:37:05 - org.hibernate.dialect.Dialect - [34mINFO [0;39m - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+11-05-2022 01:37:05 - Hibernate Types - [34mINFO [0;39m - This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+What if there was a tool that could automatically detect JPA and Hibernate performance issues?
+Hypersistence Optimizer is that tool!
+For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+11-05-2022 01:37:06 - o.h.e.t.j.p.i.JtaPlatformInitiator - [34mINFO [0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-05-2022 01:37:06 - o.s.o.j.LocalContainerEntityManagerFactoryBean - [34mINFO [0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-05-2022 01:37:07 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - [31mWARN [0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-05-2022 01:37:07 - o.s.b.w.e.tomcat.TomcatWebServer - [34mINFO [0;39m - Tomcat started on port(s): 8080 (http) with context path ''
+11-05-2022 01:37:07 - com.company.Lesson88KunUzApplication - [34mINFO [0;39m - Started Lesson88KunUzApplication in 4.337 seconds (JVM running for 4.967)
+11-05-2022 01:37:29 - o.a.c.c.C.[Tomcat].[localhost].[/] - [34mINFO [0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-05-2022 01:37:29 - o.s.web.servlet.DispatcherServlet - [34mINFO [0;39m - Initializing Servlet 'dispatcherServlet'
+11-05-2022 01:37:29 - o.s.web.servlet.DispatcherServlet - [34mINFO [0;39m - Completed initialization in 1 ms
+11-05-2022 01:37:29 - c.c.controller.ArticleController - [34mINFO [0;39m - /public/{id} 2
+11-05-2022 01:37:31 - c.c.controller.ArticleController - [34mINFO [0;39m - /public/list page=0 size=5
+11-05-2022 01:37:32 - c.c.controller.ArticleController - [34mINFO [0;39m - /public/type/{typeId}/5 2
+11-05-2022 01:37:34 - c.c.controller.ArticleController - [34mINFO [0;39m - /public/region/{regionId} 1
+11-05-2022 01:37:35 - c.c.controller.ArticleController - [34mINFO [0;39m - /public/category/{categoryId} 1
+11-05-2022 01:37:35 - c.c.controller.ArticleController - [34mINFO [0;39m - /public/type/{typeId} 2
+11-05-2022 01:37:36 - c.c.controller.ArticleController - [34mINFO [0;39m - /public/last
+11-05-2022 01:37:37 - c.c.controller.ArticleController - [34mINFO [0;39m - /public/region/{regionId}/4 1
+11-05-2022 01:37:38 - c.c.controller.ArticleController - [34mINFO [0;39m - /public/share/{id} 2
+11-05-2022 01:37:40 - c.c.controller.ArticleController - [34mINFO [0;39m - /public/category/{categoryId}/4 1
+11-05-2022 01:37:40 - c.c.controller.ArticleController - [34mINFO [0;39m - /public/view/{id} 2
+11-05-2022 01:37:45 - c.c.controller.ArticleTypeController - [34mINFO [0;39m - /public page=0 size=5
+11-05-2022 01:37:53 - c.company.controller.AuthController - [34mINFO [0;39m - Authorization: AuthDTO(email=javlonpa1n@gmail.com, password=Java123)
+11-05-2022 01:38:02 - c.c.controller.ProfileController - [34mINFO [0;39m - /public/{id} 3
+11-05-2022 01:38:02 - com.company.service.ProfileService - [31mWARN [0;39m - Visible false 3
+11-05-2022 01:38:36 - o.s.o.j.LocalContainerEntityManagerFactoryBean - [34mINFO [0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+11-05-2022 01:38:36 - com.zaxxer.hikari.HikariDataSource - [34mINFO [0;39m - HikariPool-1 - Shutdown initiated...
+11-05-2022 01:38:36 - com.zaxxer.hikari.HikariDataSource - [34mINFO [0;39m - HikariPool-1 - Shutdown completed.

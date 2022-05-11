@@ -1,0 +1,78 @@
+### Create
+POST http://localhost:8080/article/adminjon
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2IiwiaWF0IjoxNjUxNzU5MjEzLCJleHAiOjE2NTE3NjI4MTMsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiTU9ERVJBVE9SIn0.tyWXbluKQrwdI-Tujugl724_cwiGNQhtUAvIyNZb-nM
+
+{
+  "title": "GM narxlarni 20% arzonlashtirdimi",
+  "description": "Bizga gitara degan GM chilar aniqlik keltirishdi",
+  "content": "Albatta yo'q deb javob bergan GM direktori bunga aniqlik keltirdi! Bizga hamisha gitara XALQ deb izoh bermoqda!",
+  "attachId": "df45f879-afd6-469d-9584-e7538411eb3d",
+  "regionId": 1,
+  "typeId": 2,
+  "categoryId": 1,
+  "tagList": [4]
+}
+
+### Update by id
+PUT http://localhost:8080/article/adminjon/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNzU4NTY1LCJleHAiOjE2NTE3NjIxNjUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.8xwOEe5CbYHUpXMAhsOxS8lwKhXAyU1aO-dUUjB_lUk
+
+{
+  "title": "Bozor",
+  "description": "Dollar oshdi, narxlar oshdi",
+  "content": "Dollar amaki kelib hamma narsani hal qilib ketmoqda, So'mning qadri qayerda?",
+  "attachId": "c629a116-5c1a-48a6-907a-e687ed958898",
+  "regionId": 1,
+  "typeId": 1,
+  "categoryId": 2,
+  "tagList": [3,4,5]
+}
+
+### Show by id
+GET http://localhost:8080/article/adminjon/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNzY0Nzg4LCJleHAiOjE2NTE3NjgzODgsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.CM_zSTM4QRH5-yHK-2MBn8QBt7zkxlm-a1Uy8esyc8A
+Accept-Language: ru
+
+### Change Status by id
+PUT http://localhost:8080/article/adminjon/2/status?status=PUBLISHED
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2IiwiaWF0IjoxNjUxNzU5MjEzLCJleHAiOjE2NTE3NjI4MTMsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiTU9ERVJBVE9SIn0.tyWXbluKQrwdI-Tujugl724_cwiGNQhtUAvIyNZb-nM
+
+### Delete by id
+DELETE http://localhost:8080/article/adminjon/delete/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNzU4NTY1LCJleHAiOjE2NTE3NjIxNjUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.8xwOEe5CbYHUpXMAhsOxS8lwKhXAyU1aO-dUUjB_lUk
+
+### Show public by id
+GET http://localhost:8080/article/public/2
+
+### Show public list
+GET http://localhost:8080/article/public/list
+
+### Show public top 5 by type id
+GET http://localhost:8080/article/public/type/2/5
+
+### Show public by region id
+GET http://localhost:8080/article/public/region/1
+
+### Show public by category id
+GET http://localhost:8080/article/public/category/1
+
+### Show public by type id
+GET http://localhost:8080/article/public/type/2
+
+### Show public last 4 added
+GET http://localhost:8080/article/public/last
+
+### Show public top 4 by region id
+GET http://localhost:8080/article/public/region/1/4
+
+### Show public top 4 by category id
+GET http://localhost:8080/article/public/category/1/4
+
+### share by id
+GET http://localhost:8080/article/public/share/2
+
+### view by id
+GET http://localhost:8080/article/public/view/2

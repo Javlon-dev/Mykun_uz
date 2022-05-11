@@ -1,0 +1,47 @@
+### Create 1
+POST http://localhost:8080/region/adminjon
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTc4Njc1LCJleHAiOjE2NTE1ODIyNzUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.h8PG1h8zDDHslmsTQLU8_vkFnI-4Aq9Cn5j0ar-ZWqk
+
+{
+  "nameEn": "Tashkent",
+  "nameRu": "Ташкент",
+  "nameUz": "Toshkent",
+  "key": "Tashkent"
+}
+
+### Create 2
+POST http://localhost:8080/region/adminjon
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTc4Njc1LCJleHAiOjE2NTE1ODIyNzUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.h8PG1h8zDDHslmsTQLU8_vkFnI-4Aq9Cn5j0ar-ZWqk
+
+{
+  "nameEn": "Khorazm",
+  "nameRu": "Хоразм",
+  "nameUz": "Xorazm",
+  "key": "Khorazm"
+}
+
+### Update
+PUT http://localhost:8080/region/adminjon/5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTc4Njc1LCJleHAiOjE2NTE1ODIyNzUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.h8PG1h8zDDHslmsTQLU8_vkFnI-4Aq9Cn5j0ar-ZWqk
+
+{
+  "nameEn": "Khorazm",
+  "nameRu": "Хоразм",
+  "nameUz": "Xorazm",
+  "key": "Khorazm"
+}
+
+### Delete
+DELETE http://localhost:8080/region/adminjon/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTc4Njc1LCJleHAiOjE2NTE1ODIyNzUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.h8PG1h8zDDHslmsTQLU8_vkFnI-4Aq9Cn5j0ar-ZWqk
+
+### Show all
+GET http://localhost:8080/region/adminjon
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNzU4NTY1LCJleHAiOjE2NTE3NjIxNjUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.8xwOEe5CbYHUpXMAhsOxS8lwKhXAyU1aO-dUUjB_lUk
+
+### Show by lang
+GET http://localhost:8080/region/public
+Accept-Language: ru

@@ -1,0 +1,29 @@
+### Create
+POST http://localhost:8080/like/public
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxNzcwODYxLCJleHAiOjE2NTE3NzQ0NjEsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiVVNFUiJ9.lPixm6NaJDgHuz1u50LW5cSZTRRrQTsjwov3NiMeZUQ
+
+{
+  "status": "LIKE",
+  "articleId": 2
+}
+
+### Show by article id
+GET http://localhost:8080/like/public/profile/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxNzcwODYxLCJleHAiOjE2NTE3NzQ0NjEsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiVVNFUiJ9.lPixm6NaJDgHuz1u50LW5cSZTRRrQTsjwov3NiMeZUQ
+
+### Show by article id
+GET http://localhost:8080/like/public/article/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxNzcwODYxLCJleHAiOjE2NTE3NzQ0NjEsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiVVNFUiJ9.lPixm6NaJDgHuz1u50LW5cSZTRRrQTsjwov3NiMeZUQ
+
+### Delete
+DELETE http://localhost:8080/like/public/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxNzcwODYxLCJleHAiOjE2NTE3NzQ0NjEsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiVVNFUiJ9.lPixm6NaJDgHuz1u50LW5cSZTRRrQTsjwov3NiMeZUQ
+
+### Show all
+GET http://localhost:8080/like/adminjon
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNzcxNTEwLCJleHAiOjE2NTE3NzUxMTAsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.Rm6jtmQ1yrSYmvyRRWDZES6pI-Mz0dAqy77ZPG9_A3s
+
+### Show by profile id
+GET http://localhost:8080/like/adminjon/profile/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNzcxNTEwLCJleHAiOjE2NTE3NzUxMTAsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.Rm6jtmQ1yrSYmvyRRWDZES6pI-Mz0dAqy77ZPG9_A3s

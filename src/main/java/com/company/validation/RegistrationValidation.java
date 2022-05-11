@@ -1,0 +1,21 @@
+package com.company.validation;
+
+import com.company.dto.RegistrationDTO;
+import com.company.exception.AppBadRequestException;
+
+public class RegistrationValidation {
+    public static void isValid(RegistrationDTO dto) {
+        if (dto.getName() == null || dto.getName().trim().length() < 3) {
+            throw new AppBadRequestException("Name not valid");
+        }
+        if (dto.getSurname() == null || dto.getSurname().trim().length() < 3) {
+            throw new AppBadRequestException("Surname not valid");
+        }
+        if (dto.getPassword() == null || dto.getPassword().trim().length() < 5) {
+            throw new AppBadRequestException("Password not valid");
+        }
+        if (dto.getEmail() == null || dto.getEmail().trim().length() < 3 || !dto.getEmail().contains("@")) {
+            throw new AppBadRequestException("Email not valid");
+        }
+    }
+}

@@ -1,0 +1,43 @@
+### Create 1
+POST http://localhost:8080/article_type/adminjon
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTc4Njc1LCJleHAiOjE2NTE1ODIyNzUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.h8PG1h8zDDHslmsTQLU8_vkFnI-4Aq9Cn5j0ar-ZWqk
+
+{
+  "nameEn": "Actual",
+  "nameRu": "Актуальные",
+  "nameUz": "Dolzarb",
+  "key": "Actual"
+}
+
+### Create 2
+POST http://localhost:8080/article_type/adminjon
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTc4Njc1LCJleHAiOjE2NTE1ODIyNzUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.h8PG1h8zDDHslmsTQLU8_vkFnI-4Aq9Cn5j0ar-ZWqk
+
+{
+  "nameEn": "Article",
+  "nameRu": "Статья",
+  "nameUz": "Maqola",
+  "key": "Article"
+}
+
+### Update
+PUT http://localhost:8080/article_type/adminjon/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTc4Njc1LCJleHAiOjE2NTE1ODIyNzUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.h8PG1h8zDDHslmsTQLU8_vkFnI-4Aq9Cn5j0ar-ZWqk
+
+{
+  "nameEn": "Topic",
+  "nameRu": "Тема",
+  "nameUz": "Mavzu",
+  "key": "Topic"
+}
+
+### Delete
+DELETE http://localhost:8080/article_type/adminjon/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTc4Njc1LCJleHAiOjE2NTE1ODIyNzUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.h8PG1h8zDDHslmsTQLU8_vkFnI-4Aq9Cn5j0ar-ZWqk
+
+### Show by lang
+GET http://localhost:8080/article_type/public
+Accept-Language: uz

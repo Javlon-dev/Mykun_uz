@@ -1,0 +1,45 @@
+### Show by id
+GET http://localhost:8080/profile/public/3
+
+### Set Attach by id
+PUT http://localhost:8080/profile/image
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNTAyMTMzLCJleHAiOjE2NTE1MDU3MzMsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.N8ki14XSEXfPBdpaYNfYZBkbD4y1mMZYIOuKnH1DrZk
+
+{
+  "id": "fc2727a5-de4f-4ed9-8fb9-68bbdf1ca2c2"
+}
+
+### Create
+POST http://localhost:8080/profile/adminjon
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNzU4NTY1LCJleHAiOjE2NTE3NjIxNjUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.8xwOEe5CbYHUpXMAhsOxS8lwKhXAyU1aO-dUUjB_lUk
+
+{
+  "name": "Ali",
+  "surname": "Aliyev",
+  "email": "alish@gmail.com",
+  "password": "Ali123",
+  "role": "MODERATOR"
+}
+
+### Show all
+GET http://localhost:8080/profile/adminjon
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNzU4NTY1LCJleHAiOjE2NTE3NjIxNjUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.8xwOEe5CbYHUpXMAhsOxS8lwKhXAyU1aO-dUUjB_lUk
+
+### Update by id
+PUT http://localhost:8080/profile/adminjon/6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNzU4NTY1LCJleHAiOjE2NTE3NjIxNjUsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.8xwOEe5CbYHUpXMAhsOxS8lwKhXAyU1aO-dUUjB_lUk
+
+{
+  "name": "Ali",
+  "surname": "Aliyev",
+  "email": "alish@gmail.com",
+  "password": "Ali123",
+  "role": "MODERATOR"
+}
+
+### Delete by id
+DELETE http://localhost:8080/profile/adminjon/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNDcwNTY0LCJleHAiOjE2NTE0NzQxNjQsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.nWVmhfaJh6aVeNm6SDfLJHHsdw0xGLJ3m01kUvKPJ_s

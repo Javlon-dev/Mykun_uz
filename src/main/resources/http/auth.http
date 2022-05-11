@@ -1,0 +1,41 @@
+### Registration
+POST http://localhost:8080/auth/registration
+Content-Type: application/json
+
+{
+  "name": "Zayniddin",
+  "surname": "Ruzmatov",
+  "email": "zr200329@gmail.com",
+  "password": "ZR123"
+}
+
+### Verification
+GET http://localhost:8080/auth/verification/{jwt}
+
+### Login - Admin
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "abdurakhmanovjb@icloud.com",
+  "password": "Java123"
+}
+
+### Login - Moderator
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "alish@gmail.com",
+  "password": "Ali123"
+}
+
+### Login - User
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "javlonpa1n@gmail.com",
+  "password": "Java123"
+}
+

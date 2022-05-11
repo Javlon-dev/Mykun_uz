@@ -1,0 +1,34 @@
+### Create
+POST http://localhost:8080/comment/public
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxNzY3NTUwLCJleHAiOjE2NTE3NzExNTAsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiVVNFUiJ9.XE_6FgHM6Uc8ZVyUhm1OWlzHcsmPgfYYSSCQf-UeuOY
+
+{
+  "content": "Eeee Dollaringa so'mimni boshi",
+  "articleId": 2
+}
+
+### Show by article id
+GET http://localhost:8080/comment/article/2
+
+### Update by id
+PUT http://localhost:8080/comment/public/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxNzY1NjA3LCJleHAiOjE2NTE3NjkyMDcsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiVVNFUiJ9.qVNyiJr0A9X8rEMfWQzEGxMquCMq8lSIhDNj4F3wM9Y
+
+{
+  "content": "Mazgilar Dollarda oylik olinglar!",
+  "articleId": 2
+}
+
+### Delete by id
+DELETE http://localhost:8080/comment/public/delete/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjUxNzY3NTUwLCJleHAiOjE2NTE3NzExNTAsImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiVVNFUiJ9.XE_6FgHM6Uc8ZVyUhm1OWlzHcsmPgfYYSSCQf-UeuOY
+
+### Show by profile id
+GET http://localhost:8080/comment/adminjon/profile/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNzY4NjY5LCJleHAiOjE2NTE3NzIyNjksImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.Pqp4c7NZNJaEfvM0z_Yw0ze-hs3rPIUr8cQEyMtnb2c
+
+### Show all
+GET http://localhost:8080/comment/adminjon
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjUxNzY4NjY5LCJleHAiOjE2NTE3NzIyNjksImlzcyI6Im1hemdpIHByb2R1Y3Rpb24iLCJyb2xlIjoiQURNSU4ifQ.Pqp4c7NZNJaEfvM0z_Yw0ze-hs3rPIUr8cQEyMtnb2c
